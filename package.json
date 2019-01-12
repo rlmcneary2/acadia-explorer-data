@@ -1,0 +1,21 @@
+{
+  "name": "acadia-explorer-data",
+  "version": "0.0.1",
+  "description": "Data for the acadia-explorer SPA.",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rlmcneary2/acadia-explorer-data.git"
+  },
+  "author": "Richard L. McNeary II",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rlmcneary2/acadia-explorer-data/issues"
+  },
+  "homepage": "https://github.com/rlmcneary2/acadia-explorer-data#readme",
+  "dependencies": {},
+  "devDependencies": {}
+}
