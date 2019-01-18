@@ -50,22 +50,9 @@ Temporary Items
 !.vscode/settings.json
 dist
 
-
-node_modules/
-!node_modules/
-node_modules/*
-!node_modules/ipcanvas/
-!node_modules/ipcanvas-react/
-
-cmlswrap/node_modules/
-
 npm-debug.log
 yarn-error.log
 
 # Generated during the build.
-src/app/constants.js
-src/app/kpexConfig.json
-src/app/version.json
-src/app/view/viewFlow.json
 tmp
 ts-temp

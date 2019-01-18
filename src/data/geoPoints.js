@@ -31,5 +31,10 @@ module.exports = [
         latitutde: 44.321321,
         longitude: -68.189283,
         uid: "STP_THUNDER_HOLE"
+    },
+    {
+        latitutde: 44.363095,
+        longitude: -68.193408,
+        uid: "TRH_CHAMPLAIN_NORTH_RIDGE"
     }
 ];

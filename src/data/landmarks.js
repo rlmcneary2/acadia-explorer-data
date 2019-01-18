@@ -15,9 +15,8 @@ const constants = require("./constants");
  * @property {string} geoPointUid
  * @property {LandmarkType} landmarkType
  * @property {string} name
- * @property {number[]} [routes] The API assigned route ID.
- * @property {number} [stop] The API assigned stop ID (StopId).
- * @property {string} uid
+ * @property {number} [stopId] The API assigned stop ID (StopId).
+ * @property {number[]} [routeIds] This landmark is accessible from these routes (only needed if there is no stopId).
  */
 
 
@@ -26,26 +25,24 @@ const constants = require("./constants");
  */
 module.exports = [
     {
-        description: "The trailhead for Champlain Mountain's north trail.",
-        geoPointUid: "",
+        description: "The roadside trailhead for Champlain Mountain's north trail.",
+        geoPointUid: "TRH_CHAMPLAIN_NORTH_RIDGE",
         landmarkType: constants.landmarkType.trailhead,
-        name: "",
-        routes: [3, 4]
+        name: "Champlain North Ridge Trailhead",
+        routeIds: [3,4]
     },
     {
         description: "This is the desc.",
         geoPointUid: "LMK_SAND_BEACH",
-        landmarkType: constants.landmarkType.trailhead,
+        landmarkType: constants.landmarkType.pointOfInterest,
         name: "Sand Beach",
-        routes: [3, 4],
-        stop: 22
+        stopId: 22
     },
     {
         description: "This is the desc. for thunder hole",
         geoPointUid: "LMK_THUNDER_HOLE",
-        landmarkType: constants.landmarkType.visitorCenter,
+        landmarkType: constants.landmarkType.pointOfInterest,
         name: "Thunder Hole",
-        routes: [3, 4],
-        stop: 23
+        stopId: 23
     },
 ];
