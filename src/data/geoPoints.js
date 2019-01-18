@@ -13,13 +13,18 @@
 /** @type {GeoPoint[]} */
 module.exports = [
     {
-        latitutde: 0,
-        longitude: 0,
+        latitutde: 44.363095,
+        longitude: -68.193408,
+        uid: "LMK_CHAMPLAIN_NORTH_RIDGE"
+    },
+    {
+        latitutde: 44.329245,
+        longitude: -68.182388,
         uid: "LMK_SAND_BEACH"
     },
     {
-        latitutde: 1,
-        longitude: 1,
+        latitutde: 44.320625,
+        longitude: -68.188555,
         uid: "LMK_THUNDER_HOLE"
     },
     {
@@ -31,10 +36,5 @@ module.exports = [
         latitutde: 44.321321,
         longitude: -68.189283,
         uid: "STP_THUNDER_HOLE"
-    },
-    {
-        latitutde: 44.363095,
-        longitude: -68.193408,
-        uid: "TRH_CHAMPLAIN_NORTH_RIDGE"
     }
 ];

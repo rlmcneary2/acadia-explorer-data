@@ -26,7 +26,7 @@ const constants = require("./constants");
 module.exports = [
     {
         description: "The roadside trailhead for Champlain Mountain's north trail.",
-        geoPointUid: "TRH_CHAMPLAIN_NORTH_RIDGE",
+        geoPointUid: "LMK_CHAMPLAIN_NORTH_RIDGE",
         landmarkType: constants.landmarkType.trailhead,
         name: "Champlain North Ridge Trailhead",
         routeIds: [3,4]
