@@ -186,14 +186,159 @@ module.exports = [
         stopId: 11
     },
     {
-        description: "",
-        geoPointUid: "",
-        landmarkType: constants.landmarkType.visitorCenter,
-        name: "",
-        stopId: 
+        description: "LMK_NORTHEAST_HARBOR_STOP",
+        geoPointUid: "LMK_NORTHEAST_HARBOR",
+        landmarkType: constants.landmarkType.routeStop,
+        name: "LMK_NORTHEAST_HARBOR_STOP",
+        stopId: 52
     },
-
-
+    {
+        description: "LMK_NORTHEAST_HARBOR_PIER_DESC",
+        geoPointUid: "LMK_NORTHEAST_HARBOR_PIER",
+        landmarkType: constants.landmarkType.ferryTransport,
+        name: "LMK_NORTHEAST_HARBOR_PIER_STOP",
+        stopId: 38
+    },
+    {
+        description: "LMK_OCEANARIUM_STOP",
+        geoPointUid: "LMK_OCEANARIUM",
+        landmarkType: constants.landmarkType.attraction,
+        name: "LMK_OCEANARIUM_STOP",
+        stopId: 7
+    },
+    {
+        description: "LMK_OTTER_CLIFFS_STOP",
+        geoPointUid: "LMK_OTTER_CLIFFS",
+        landmarkType: constants.landmarkType.pointOfInterest,
+        name: "LMK_OTTER_CLIFFS_STOP",
+        stopId: 24
+    },
+    {
+        description: "LMK_PARKMAN_MOUNTAIN_DESC",
+        geoPointUid: "LMK_PARKMAN_MOUNTAIN",
+        landmarkType: constants.landmarkType.routeStop,
+        name: "LMK_PARKMAN_MOUNTAIN_STOP",
+        stopId: 77
+    },
+    {
+        description: "LMK_PROSPECT_HARBOR_STOP",
+        geoPointUid: "LMK_PROSPECT_HARBOR",
+        landmarkType: constants.landmarkType.routeStop,
+        name: "LMK_PROSPECT_HARBOR_STOP",
+        stopId: 61
+    },
+    {
+        description: "LMK_SAND_BEACH_DESC",
+        geoPointUid: "LMK_SAND_BEACH",
+        landmarkType: constants.landmarkType.pointOfInterest,
+        name: "LMK_SAND_BEACH_STOP",
+        stopId: 22
+    },
+    {
+        description: "LMK_SCHOODIC_POINT_DESC",
+        geoPointUid: "LMK_SCHOODIC_POINT",
+        landmarkType: constants.landmarkType.routeStop,
+        name: "LMK_SCHOODIC_POINT_STOP",
+        stopId: 59
+    },
+    {
+        description: "LMK_SCHOODIC_WOODS_CAMPROUND_STOP",
+        geoPointUid: "LMK_SCHOODIC_WOODS_CAMPROUND",
+        landmarkType: constants.landmarkType.campground,
+        name: "LMK_SCHOODIC_WOODS_CAMPROUND_STOP",
+        stopId: 79
+    },
+    {
+        description: "LMK_SEAL_HARBOR_STOP",
+        geoPointUid: "LMK_SEAL_HARBOR",
+        landmarkType: constants.landmarkType.routeStop,
+        name: "LMK_SEAL_HARBOR_STOP",
+        stopId: 31
+    },
+    {
+        description: "LMK_SEAWALL_CAMPGROUND_STOP",
+        geoPointUid: "LMK_SEAWALL_CAMPGROUND",
+        landmarkType: constants.landmarkType.campground,
+        name: "LMK_SEAWALL_CAMPGROUND_STOP",
+        stopId: 46
+    },
+    {
+        description: "LMK_SIEUR_DE_MONTS_DESC",
+        geoPointUid: "LMK_SIEUR_DE_MONTS",
+        landmarkType: constants.landmarkType.visitorCenter,
+        name: "LMK_SIEUR_DE_MONTS_STOP",
+        stopId: 21
+    },
+    {
+        description: "LMK_SMUGGLERS_DEN_CAMPGROUND_STOP",
+        geoPointUid: "LMK_SMUGGLERS_DEN_CAMPGROUND",
+        landmarkType: constants.landmarkType.campground,
+        name: "LMK_SMUGGLERS_DEN_CAMPGROUND_STOP",
+        stopId: 41
+    },
+    {
+        description: "LMK_SOMESVILLE_DESC",
+        geoPointUid: "LMK_SOMESVILLE",
+        landmarkType: constants.landmarkType.routeStop,
+        name: "LMK_SOMESVILLE_STOP",
+        stopId: 39
+    },
+    {
+        description: "LMK_SOUTHWEST_HARBOR_STOP",
+        geoPointUid: "LMK_SOUTHWEST_HARBOR",
+        landmarkType: constants.landmarkType.routeStop,
+        name: "LMK_SOUTHWEST_HARBOR_STOP",
+        stopId: 44
+    },
+    {
+        description: "LMK_THUNDER_HOLE_STOP",
+        geoPointUid: "LMK_THUNDER_HOLE",
+        landmarkType: constants.landmarkType.pointOfInterest,
+        name: "LMK_THUNDER_HOLE_STOP",
+        stopId: 23
+    },
+    {
+        description: "LMK_TREMONT_SCHOOL_STOP",
+        geoPointUid: "LMK_TREMONT_SCHOOL",
+        landmarkType: constants.landmarkType.routeStop,
+        name: "LMK_TREMONT_SCHOOL_STOP",
+        stopId: 48
+    },
+    {
+        description: "LMK_TOWN_HILL_STOP",
+        geoPointUid: "LMK_TOWN_HILL",
+        landmarkType: constants.landmarkType.routeStop,
+        name: "LMK_TOWN_HILL_STOP",
+        stopId: 69
+    },
+    {
+        description: "LMK_VILLAGE_GREEN_DESC",
+        geoPointUid: "LMK_VILLAGE_GREEN",
+        landmarkType: constants.landmarkType.pointOfInterest,
+        name: "LMK_VILLAGE_GREEN_STOP",
+        stopId: 1
+    },
+    {
+        description: "LMK_WILDWOOD_STABLES_STOP",
+        geoPointUid: "LMK_WILDWOOD_STABLES",
+        landmarkType: constants.landmarkType.routeStop,
+        name: "LMK_WILDWOOD_STABLES_STOP",
+        stopId: 30
+    },
+    {
+        description: "LMK_WINTER_HARBOR_STOP",
+        geoPointUid: "LMK_WINTER_HARBOR",
+        landmarkType: constants.landmarkType.routeStop,
+        name: "LMK_WINTER_HARBOR_STOP",
+        stopId: 57
+    },
+    {
+        description: "LMK_WOODLANDS_KOA_CAMPGROUND_STOP",
+        geoPointUid: "LMK_WOODLANDS_KOA_CAMPGROUND",
+        landmarkType: constants.landmarkType.campground,
+        name: "LMK_WOODLANDS_KOA_CAMPGROUND_STOP",
+        stopId: 8
+    },
     {
         description: "The roadside trailhead for Champlain Mountain's north trail.",
         geoPointUid: "LMK_CHAMPLAIN_NORTH_RIDGE",

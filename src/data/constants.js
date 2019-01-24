@@ -4,6 +4,7 @@
 /**
  * @typedef LandmarkType
  * @property {"airport"} airport
+ * @property {"attraction"} attraction
  * @property {"campground"} campground
  * @property {"ferry-transport"} ferryTransport
  * @property {"ground-transport"} groundTransport
@@ -28,6 +29,7 @@ module.exports = Object.freeze({
      */
     landmarkType: {
         airport: "airport",
+        attraction: "attraction",
         campground: "campground",
         ferryTransport: "ferry-transport",
         groundTransport: "ground-transport",

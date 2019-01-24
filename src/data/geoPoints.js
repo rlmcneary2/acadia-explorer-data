@@ -128,16 +128,115 @@ module.exports = [
         uid: "LMK_NARROWS_TOO_CAMPGROUND"
     },
     {
-        latitutde: ,
-        longitude: ,
-        uid: ""
+        latitutde: 44.29478073,
+        longitude: -68.28958893,
+        uid: "LMK_NORTHEAST_HARBOR"
     },
     {
-        latitutde: ,
-        longitude: ,
-        uid: ""
+        latitutde: 44.29471588,
+        longitude: -68.284935,
+        uid: "LMK_NORTHEAST_HARBOR_PIER"
     },
-
+    {
+        latitutde: 44.419361,
+        longitude: -68.349579,
+        uid: "LMK_OCEANARIUM"
+    },
+    {
+        latitutde: 44.31101227,
+        longitude: -68.18968201,
+        uid: "LMK_OTTER_CLIFFS"
+    },
+    {
+        latitutde: 44.329011,
+        longitude: -68.293192,
+        uid: "LMK_PARKMAN_MOUNTAIN"
+    },
+    {
+        latitutde: 44.40686798,
+        longitude: -68.02690125,
+        uid: "LMK_PROSPECT_HARBOR"
+    },
+    {
+        latitutde: 44.32995987,
+        longitude: -68.184021,
+        uid: "LMK_SAND_BEACH"
+    },
+    {
+        latitutde: 44.33314896,
+        longitude: -68.06096649,
+        uid: "LMK_SCHOODIC_POINT"
+    },
+    {
+        latitutde: 44.380588,
+        longitude: -68.067864,
+        uid: "LMK_SCHOODIC_WOODS_CAMPROUND"
+    },
+    {
+        latitutde: 44.29630661,
+        longitude: -68.2411499,
+        uid: "LMK_SEAL_HARBOR"
+    },
+    {
+        latitutde: 44.23894882,
+        longitude: -68.30301666,
+        uid: "LMK_SEAWALL_CAMPGROUND"
+    },
+    {
+        latitutde: 44.36243439,
+        longitude: -68.20748138,
+        uid: "LMK_SIEUR_DE_MONTS"
+    },
+    {
+        latitutde: 44.30040359,
+        longitude: -68.33153534,
+        uid: "LMK_SMUGGLERS_DEN_CAMPGROUND_STOP"
+    },
+    {
+        latitutde: 44.3613205,
+        longitude: -68.33518219,
+        uid: "LMK_SOMESVILLE"
+    },
+    {
+        latitutde: 44.2801857,
+        longitude: -68.32499695,
+        uid: "LMK_SOUTHWEST_HARBOR"
+    },
+    {
+        latitutde: 44.32134247,
+        longitude: -68.18928528,
+        uid: "LMK_THUNDER_HOLE"
+    },
+    {
+        latitutde: 44.25374985,
+        longitude: -68.35064697,
+        uid: "LMK_TREMONT_SCHOOL"
+    },
+    {
+        latitutde: 44.39901733,
+        longitude: -68.33446503,
+        uid: "LMK_TOWN_HILL"
+    },
+    {
+        latitutde: 44.38788986,
+        longitude: -68.20548248,
+        uid: "LMK_VILLAGE_GREEN"
+    },
+    {
+        latitutde: 44.31375122,
+        longitude: -68.24717712,
+        uid: "LMK_WILDWOOD_STABLES_STOP"
+    },
+    {
+        latitutde: 44.39128876,
+        longitude: -68.08921051,
+        uid: "LMK_WINTER_HARBOR"
+    },
+    {
+        latitutde: 44.4050827,
+        longitude: -68.34212494,
+        uid: "LMK_WOODLANDS_KOA_CAMPGROUND"
+    },
     {
         latitutde: 44.363095,
         longitude: -68.193408,
