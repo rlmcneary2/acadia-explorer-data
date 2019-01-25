@@ -8,6 +8,7 @@
  * @property {"campground"} campground
  * @property {"ferry-transport"} ferryTransport
  * @property {"ground-transport"} groundTransport
+ * @property {"lodging"} lodging
  * @property {"point-of-interest"} pointOfInterest
  * @property {"route-stop"} routeStop
  * @property {"trailhead"} trailhead
@@ -33,6 +34,7 @@ module.exports = Object.freeze({
         campground: "campground",
         ferryTransport: "ferry-transport",
         groundTransport: "ground-transport",
+        lodging: "lodging",
         pointOfInterest: "point-of-interest",
         routeStop: "route-stop",
         trailhead: "trailhead",

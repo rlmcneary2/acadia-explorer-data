@@ -25,11 +25,32 @@ const constants = require("./constants");
  */
 module.exports = [
     {
+        description: "LMK_ACADIA_INN_STOP",
+        geoPointUid: "LMK_ACADIA_INN",
+        landmarkType: constants.landmarkType.lodging,
+        name: "LMK_ACADIA_INN_STOP",
+        stopId: 17
+    },
+    {
         description: "LMK_ACADIA_GATEWAY_CENTER_DESC",
         geoPointUid: "LMK_ACADIA_GATEWAY_CENTER",
         landmarkType: constants.landmarkType.groundTransport,
         name: "LMK_ACADIA_GATEWAY_CENTER_STOP",
         stopId: 74
+    },
+    {
+        description: "LMK_ATLANTIC_EYRIE_LODGE_STOP",
+        geoPointUid: "LMK_ATLANTIC_EYRIE_LODGE",
+        landmarkType: constants.landmarkType.lodging,
+        name: "LMK_ATLANTIC_EYRIE_LODGE_STOP",
+        stopId: 18
+    },
+    {
+        description: "LMK_ATLANTIC_OCEANSIDE_HOTEL_STOP",
+        geoPointUid: "LMK_ATLANTIC_OCEANSIDE_HOTEL",
+        landmarkType: constants.landmarkType.lodging,
+        name: "LMK_ATLANTIC_OCEANSIDE_HOTEL_STOP",
+        stopId: 14
     },
     {
         description: "LMK_BAR_HARBOR_AIRPORT_DESC",
@@ -51,6 +72,13 @@ module.exports = [
         landmarkType: constants.landmarkType.campground,
         name: "LMK_BAR_HARBOR_KOA_CAMPGROUND_STOP",
         stopId: 9
+    },
+    {
+        description: "LMK_BAR_HARBOR_REGENCY_STOP",
+        geoPointUid: "LMK_BAR_HARBOR_REGENCY",
+        landmarkType: constants.landmarkType.lodging,
+        name: "LMK_BAR_HARBOR_REGENCY_STOP",
+        stopId: 15
     },
     {
         description: "LMK_BASS_HARBOR_CAMPGROUND_STOP",
@@ -106,7 +134,14 @@ module.exports = [
         geoPointUid: "LMK_CADILLAC_NORTH_RIDGE",
         landmarkType: constants.landmarkType.trailhead,
         name: "LMK_CADILLAC_NORTH_RIDGE_STOP",
-        stopId: 83
+        stopId: 20 /* outbound */
+    },
+    {
+        description: "LMK_CADILLAC_NORTH_RIDGE_STOP",
+        geoPointUid: "LMK_CADILLAC_NORTH_RIDGE",
+        landmarkType: constants.landmarkType.trailhead,
+        name: "LMK_CADILLAC_NORTH_RIDGE_STOP",
+        stopId: 83 /* inbound */
     },
     {
         description: "LMK_CLARK_POINT_STOP",
@@ -144,6 +179,13 @@ module.exports = [
         stopId: 5
     },
     {
+        description: "LMK_HAMPTON_INN_BAR_HARBOR_STOP",
+        geoPointUid: "LMK_HAMPTON_INN_BAR_HARBOR",
+        landmarkType: constants.landmarkType.lodging,
+        name: "LMK_HAMPTON_INN_BAR_HARBOR_STOP",
+        stopId: 71
+    },
+    {
         description: "LMK_HULLS_COVE_VISITOR_CENTER_DESC",
         geoPointUid: "LMK_HULLS_COVE_VISITOR_CENTER",
         landmarkType: constants.landmarkType.visitorCenter,
@@ -170,6 +212,13 @@ module.exports = [
         landmarkType: constants.landmarkType.routeStop,
         name: "LMK_MID_HIGH_SCHOOL_STOP",
         stopId: 35
+    },
+    {
+        description: "LMK_MT_DESERT_CAMPGROUND_STOP",
+        geoPointUid: "LMK_MT_DESERT_CAMPGROUND",
+        landmarkType: constants.landmarkType.campground,
+        name: "LMK_MT_DESERT_CAMPGROUND_STOP",
+        stopId: 62
     },
     {
         description: "LMK_MT_DESERT_NARROWS_CAMPGROUND_STOP",
@@ -331,6 +380,13 @@ module.exports = [
         landmarkType: constants.landmarkType.routeStop,
         name: "LMK_WINTER_HARBOR_STOP",
         stopId: 57
+    },
+    {
+        description: "LMK_WONDER_VIEW_INN_STOP",
+        geoPointUid: "LMK_WONDER_VIEW_INN",
+        landmarkType: constants.landmarkType.lodging,
+        name: "LMK_WONDER_VIEW_INN_STOP",
+        stopId: 19
     },
     {
         description: "LMK_WOODLANDS_KOA_CAMPGROUND_STOP",

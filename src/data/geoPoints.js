@@ -13,9 +13,24 @@
 /** @type {GeoPoint[]} */
 module.exports = [
     {
+        latitutde: 44.39526749,
+        longitude: -68.22457123,
+        uid: "LMK_ACADIA_INN"
+    },
+    {
         latitutde: 44.470624,
         longitude: -68.371438,
         uid: "LMK_ACADIA_GATEWAY_CENTER"
+    },
+    {
+        latitutde: 44.39187622,
+        longitude: -68.22277832,
+        uid: "LMK_ATLANTIC_EYRIE_LODGE"
+    },
+    {
+        latitutde: 44.3971138,
+        longitude: -68.22524261,
+        uid: "LMK_ATLANTIC_OCEANSIDE_HOTEL"
     },
     {
         latitutde: 44.44600296,
@@ -31,6 +46,11 @@ module.exports = [
         latitutde: 44.42137909,
         longitude: -68.36430359,
         uid: "LMK_BAR_HARBOR_KOA_CAMPGROUND"
+    },
+    {
+        latitutde: 44.39929581,
+        longitude: -68.22899628,
+        uid: "LMK_BAR_HARBOR_REGENCY"
     },
     {
         latitutde: 44.23036194,
@@ -98,6 +118,11 @@ module.exports = [
         uid: "LMK_HADLEY_POINT"
     },
     {
+        latitutde: 44.390103,
+        longitude: -68.22244,
+        uid: "LMK_HAMPTON_INN_BAR_HARBOR"
+    },
+    {
         latitutde: 44.40903854,
         longitude: -68.24743652,
         uid: "LMK_HULLS_COVE_VISITOR_CENTER"
@@ -116,6 +141,11 @@ module.exports = [
         latitutde: 44.37173843,
         longitude: -68.30102539,
         uid: "LMK_MID_HIGH_SCHOOL"
+    },
+    {
+        latitutde: 44.36645889,
+        longitude: -68.31780243,
+        uid: "LMK_MT_DESERT_CAMPGROUND"
     },
     {
         latitutde: 44.4199295,
@@ -190,6 +220,11 @@ module.exports = [
     {
         latitutde: 44.30040359,
         longitude: -68.33153534,
+        uid: "LMK_SMUGGLERS_DEN_CAMPGROUND"
+    },
+    {
+        latitutde: 44.30040359,
+        longitude: -68.33153534,
         uid: "LMK_SMUGGLERS_DEN_CAMPGROUND_STOP"
     },
     {
@@ -225,12 +260,17 @@ module.exports = [
     {
         latitutde: 44.31375122,
         longitude: -68.24717712,
-        uid: "LMK_WILDWOOD_STABLES_STOP"
+        uid: "LMK_WILDWOOD_STABLES"
     },
     {
         latitutde: 44.39128876,
         longitude: -68.08921051,
         uid: "LMK_WINTER_HARBOR"
+    },
+    {
+        latitutde: 44.39022446,
+        longitude: -68.21959686,
+        uid: "LMK_WONDER_VIEW_INN"
     },
     {
         latitutde: 44.4050827,

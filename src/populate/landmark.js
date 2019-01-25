@@ -69,6 +69,8 @@ module.exports = async (output, isDebug) => {
                 if (stop) {
                     const { description, name } = stop;
                     nextStop = { ...nextStop, description, name };
+                } else {
+                    throw Error(`Stop ${id} for route ${route.name}(${route.id}) was not found in landmarksData.`);
                 }
 
                 nextScheduledStop.stops.push(nextStop);
