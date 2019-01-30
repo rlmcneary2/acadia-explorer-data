@@ -6,15 +6,18 @@ const constants = require("./constants");
 
 /**
  * @typedef {import("./constants").LandmarkType} LandmarkType
+ * @typedef {import("./constants").PageElement} PageElement
  */
 
 
 /**
  * @typedef Landmark
- * @property {string} description
+ * @property {string} [description] A long potentially multi-sentence description.
  * @property {string} geoPointUid
  * @property {LandmarkType} landmarkType
  * @property {string} name
+ * @property {PageElement[]} [page] An array with information that can be displayed as HTML.
+ * @property {string} [descriptionShort] A short description.
  * @property {number} [stopId] The API assigned stop ID (StopId).
  * @property {number[]} [routeIds] This landmark is accessible from these routes (only needed if there is no stopId).
  */
@@ -25,392 +28,356 @@ const constants = require("./constants");
  */
 module.exports = [
     {
-        description: "LMK_ACADIA_INN_STOP",
         geoPointUid: "LMK_ACADIA_INN",
         landmarkType: constants.landmarkType.lodging,
-        name: "LMK_ACADIA_INN_STOP",
+        name: "Acadia Inn",
         stopId: 17
     },
     {
         description: "LMK_ACADIA_GATEWAY_CENTER_DESC",
         geoPointUid: "LMK_ACADIA_GATEWAY_CENTER",
         landmarkType: constants.landmarkType.groundTransport,
-        name: "LMK_ACADIA_GATEWAY_CENTER_STOP",
+        name: "Acadia Gateway Center",
         stopId: 74
     },
     {
-        description: "LMK_ATLANTIC_EYRIE_LODGE_STOP",
         geoPointUid: "LMK_ATLANTIC_EYRIE_LODGE",
         landmarkType: constants.landmarkType.lodging,
-        name: "LMK_ATLANTIC_EYRIE_LODGE_STOP",
+        name: "Atlantic Eyrie Lodge",
         stopId: 18
     },
     {
-        description: "LMK_ATLANTIC_OCEANSIDE_HOTEL_STOP",
         geoPointUid: "LMK_ATLANTIC_OCEANSIDE_HOTEL",
         landmarkType: constants.landmarkType.lodging,
-        name: "LMK_ATLANTIC_OCEANSIDE_HOTEL_STOP",
+        name: "Atlantic Oceanside Hotel",
         stopId: 14
     },
     {
-        description: "LMK_BAR_HARBOR_AIRPORT_DESC",
         geoPointUid: "LMK_BAR_HARBOR_AIRPORT",
         landmarkType: constants.landmarkType.airport,
-        name: "LMK_BAR_HARBOR_AIRPORT_STOP",
+        name: "Bar Harbor Airport",
         stopId: 10
     },
     {
-        description: "LMK_BAR_HARBOR_CAMPGROUND_STOP",
         geoPointUid: "LMK_BAR_HARBOR_CAMPGROUND",
         landmarkType: constants.landmarkType.campground,
-        name: "LMK_BAR_HARBOR_CAMPGROUND_STOP",
+        name: "Bar Harbor Campground",
         stopId: 4
     },
     {
-        description: "LMK_BAR_HARBOR_KOA_CAMPGROUND_STOP",
         geoPointUid: "LMK_BAR_HARBOR_KOA_CAMPGROUND",
         landmarkType: constants.landmarkType.campground,
-        name: "LMK_BAR_HARBOR_KOA_CAMPGROUND_STOP",
+        name: "Bar Harbor KOA Campground",
         stopId: 9
     },
     {
-        description: "LMK_BAR_HARBOR_REGENCY_STOP",
         geoPointUid: "LMK_BAR_HARBOR_REGENCY",
         landmarkType: constants.landmarkType.lodging,
-        name: "LMK_BAR_HARBOR_REGENCY_STOP",
+        name: "Bar Harbor Regency",
         stopId: 15
     },
     {
-        description: "LMK_BASS_HARBOR_CAMPGROUND_STOP",
         geoPointUid: "LMK_BASS_HARBOR_CAMPGROUND",
         landmarkType: constants.landmarkType.campground,
-        name: "LMK_BASS_HARBOR_CAMPGROUND_STOP",
+        name: "Bass Harbor Campground",
         stopId: 47
     },
     {
-        description: "LMK_BASS_HARBOR_FERRY_TERMINAL_STOP",
         geoPointUid: "LMK_BASS_HARBOR_FERRY_TERMINAL",
         landmarkType: constants.landmarkType.ferryTransport,
-        name: "LMK_BASS_HARBOR_FERRY_TERMINAL_STOP",
+        name: "Bass Harbor Ferry Terminal",
         stopId: 55
     },
     {
-        description: "LMK_BERNARD_STOP",
         geoPointUid: "LMK_BERNARD",
         landmarkType: constants.landmarkType.pointOfInterest,
-        name: "LMK_BERNARD_STOP",
+        name: "Bernard",
         stopId: 50
     },
     {
-        description: "LMK_BLACKWOODS_CAMPGROUND_STOP",
         geoPointUid: "LMK_BLACKWOODS_CAMPGROUND",
         landmarkType: constants.landmarkType.campground,
-        name: "LMK_BLACKWOODS_CAMPGROUND_STOP",
+        name: "Blackwoods Campground",
         stopId: 27
     },
     {
-        description: "LMK_BIRCH_HARBOR_STOP",
         geoPointUid: "LMK_BIRCH_HARBOR",
         landmarkType: constants.landmarkType.pointOfInterest,
-        name: "LMK_BIRCH_HARBOR_STOP",
+        name: "Birch Harbor",
         stopId: 60
     },
     {
         description: "LMK_BROWN_MOUNTAIN_GATEHOUSE_DESC",
         geoPointUid: "LMK_BROWN_MOUNTAIN_GATEHOUSE",
         landmarkType: constants.landmarkType.pointOfInterest,
-        name: "LMK_BROWN_MOUNTAIN_GATEHOUSE_STOP",
+        name: "Brown Mountain Gatehouse",
         stopId: 53
     },
     {
         description: "LMK_BUBBLE_POND_DESC",
-        geoPointUid: "LMK_BUBBLE_POND_STOP",
+        geoPointUid: "LMK_BUBBLE_POND",
         landmarkType: constants.landmarkType.routeStop,
-        name: "LMK_BUBBLE_POND_STOP",
+        name: "Bubble Pond",
         stopId: 28
     },
     {
-        description: "LMK_CADILLAC_NORTH_RIDGE_STOP",
+        /* outbound */
         geoPointUid: "LMK_CADILLAC_NORTH_RIDGE",
         landmarkType: constants.landmarkType.trailhead,
-        name: "LMK_CADILLAC_NORTH_RIDGE_STOP",
-        stopId: 20 /* outbound */
+        name: "Cadillac North Ridge",
+        stopId: 20
     },
     {
-        description: "LMK_CADILLAC_NORTH_RIDGE_STOP",
+        /* inbound */
         geoPointUid: "LMK_CADILLAC_NORTH_RIDGE",
         landmarkType: constants.landmarkType.trailhead,
-        name: "LMK_CADILLAC_NORTH_RIDGE_STOP",
-        stopId: 83 /* inbound */
+        name: "Cadillac North Ridge",
+        stopId: 83
     },
     {
-        description: "LMK_CLARK_POINT_STOP",
         geoPointUid: "LMK_CLARK_POINT",
         landmarkType: constants.landmarkType.routeStop,
-        name: "LMK_CLARK_POINT_STOP",
+        name: "Clark Point",
         stopId: 43
     },
     {
         description: "LMK_EAGLE_LAKE_DESC",
         geoPointUid: "LMK_EAGLE_LAKE",
         landmarkType: constants.landmarkType.routeStop,
-        name: "LMK_EAGLE_LAKE_STOP",
+        name: "Eagle Lake",
         stopId: 34
     },
     {
         description: "LMK_ECHO_LAKE_DESC",
         geoPointUid: "LMK_ECHO_LAKE",
         landmarkType: constants.landmarkType.pointOfInterest,
-        name: "LMK_ECHO_LAKE_STOP",
+        name: "Echo Lake",
         stopId: 40
     },
     {
         description: "LMK_WH_FERRY_TERMINAL_DESC",
         geoPointUid: "LMK_WH_FERRY_TERMINAL",
         landmarkType: constants.landmarkType.ferryTransport,
-        name: "LMK_WH_FERRY_TERMINAL_STOP",
+        name: "Winter Harbor Ferry Terminal",
         stopId: 56
     },
     {
-        description: "LMK_HADLEY_POINT_STOP",
         geoPointUid: "LMK_HADLEY_POINT",
         landmarkType: constants.landmarkType.routeStop,
-        name: "LMK_HADLEY_POINT_STOP",
+        name: "Hadley Point",
         stopId: 5
     },
     {
-        description: "LMK_HAMPTON_INN_BAR_HARBOR_STOP",
         geoPointUid: "LMK_HAMPTON_INN_BAR_HARBOR",
         landmarkType: constants.landmarkType.lodging,
-        name: "LMK_HAMPTON_INN_BAR_HARBOR_STOP",
+        name: "Hampton Inn Bar Harbor",
         stopId: 71
     },
     {
         description: "LMK_HULLS_COVE_VISITOR_CENTER_DESC",
         geoPointUid: "LMK_HULLS_COVE_VISITOR_CENTER",
         landmarkType: constants.landmarkType.visitorCenter,
-        name: "LMK_HULLS_COVE_VISITOR_CENTER_STOP",
+        name: "Hulls Cove Vistor Center",
         stopId: 3
     },
     {
         description: "LMK_JORDAN_POND_DESC",
         geoPointUid: "LMK_JORDAN_POND",
         landmarkType: constants.landmarkType.pointOfInterest,
-        name: "LMK_JORDAN_POND_STOP",
+        name: "Jordan Pond",
         stopId: 29
     },
     {
-        description: "LMK_MANSET_DOCK_STOP",
         geoPointUid: "LMK_MANSET_DOCK",
         landmarkType: constants.landmarkType.routeStop,
-        name: "LMK_MANSET_DOCK_STOP",
+        name: "Manset Dock",
         stopId: 88
     },
     {
         description: "LMK_MID_HIGH_SCHOOL_DESC",
         geoPointUid: "LMK_MID_HIGH_SCHOOL",
         landmarkType: constants.landmarkType.routeStop,
-        name: "LMK_MID_HIGH_SCHOOL_STOP",
+        name: "MDI High School",
         stopId: 35
     },
     {
-        description: "LMK_MT_DESERT_CAMPGROUND_STOP",
         geoPointUid: "LMK_MT_DESERT_CAMPGROUND",
         landmarkType: constants.landmarkType.campground,
-        name: "LMK_MT_DESERT_CAMPGROUND_STOP",
+        name: "Mount Desert Campground",
         stopId: 62
     },
     {
-        description: "LMK_MT_DESERT_NARROWS_CAMPGROUND_STOP",
         geoPointUid: "LMK_MT_DESERT_NARROWS_CAMPGROUND",
         landmarkType: constants.landmarkType.campground,
-        name: "LMK_MT_DESERT_NARROWS_CAMPGROUND_STOP",
+        name: "Mount Desert Narrows Campground",
         stopId: 6
     },
     {
-        description: "LMK_NARROWS_TOO_CAMPGROUND_STOP",
         geoPointUid: "LMK_NARROWS_TOO_CAMPGROUND",
         landmarkType: constants.landmarkType.campground,
-        name: "LMK_NARROWS_TOO_CAMPGROUND_STOP",
+        name: "Narrows Too Campground",
         stopId: 11
     },
     {
-        description: "LMK_NORTHEAST_HARBOR_STOP",
         geoPointUid: "LMK_NORTHEAST_HARBOR",
         landmarkType: constants.landmarkType.routeStop,
-        name: "LMK_NORTHEAST_HARBOR_STOP",
+        name: "Northeast Harbor Main Street",
         stopId: 52
     },
     {
         description: "LMK_NORTHEAST_HARBOR_PIER_DESC",
         geoPointUid: "LMK_NORTHEAST_HARBOR_PIER",
         landmarkType: constants.landmarkType.ferryTransport,
-        name: "LMK_NORTHEAST_HARBOR_PIER_STOP",
+        name: "Northeast Harbor Pier",
         stopId: 38
     },
     {
-        description: "LMK_OCEANARIUM_STOP",
         geoPointUid: "LMK_OCEANARIUM",
         landmarkType: constants.landmarkType.attraction,
-        name: "LMK_OCEANARIUM_STOP",
+        name: "Oceanarium",
         stopId: 7
     },
     {
-        description: "LMK_OTTER_CLIFFS_STOP",
         geoPointUid: "LMK_OTTER_CLIFFS",
         landmarkType: constants.landmarkType.pointOfInterest,
-        name: "LMK_OTTER_CLIFFS_STOP",
+        name: "Otter Cliffs",
         stopId: 24
     },
     {
         description: "LMK_PARKMAN_MOUNTAIN_DESC",
         geoPointUid: "LMK_PARKMAN_MOUNTAIN",
         landmarkType: constants.landmarkType.routeStop,
-        name: "LMK_PARKMAN_MOUNTAIN_STOP",
+        name: "Parkman Mountain",
         stopId: 77
     },
     {
-        description: "LMK_PROSPECT_HARBOR_STOP",
         geoPointUid: "LMK_PROSPECT_HARBOR",
         landmarkType: constants.landmarkType.routeStop,
-        name: "LMK_PROSPECT_HARBOR_STOP",
+        name: "Prospect Harbor",
         stopId: 61
     },
     {
         description: "LMK_SAND_BEACH_DESC",
         geoPointUid: "LMK_SAND_BEACH",
         landmarkType: constants.landmarkType.pointOfInterest,
-        name: "LMK_SAND_BEACH_STOP",
+        name: "Sand Beach",
         stopId: 22
     },
     {
         description: "LMK_SCHOODIC_POINT_DESC",
         geoPointUid: "LMK_SCHOODIC_POINT",
         landmarkType: constants.landmarkType.routeStop,
-        name: "LMK_SCHOODIC_POINT_STOP",
+        name: "Schoodic Point",
         stopId: 59
     },
     {
-        description: "LMK_SCHOODIC_WOODS_CAMPROUND_STOP",
         geoPointUid: "LMK_SCHOODIC_WOODS_CAMPROUND",
         landmarkType: constants.landmarkType.campground,
-        name: "LMK_SCHOODIC_WOODS_CAMPROUND_STOP",
+        name: "Schoodic Woods Campground",
         stopId: 79
     },
     {
-        description: "LMK_SEAL_HARBOR_STOP",
         geoPointUid: "LMK_SEAL_HARBOR",
         landmarkType: constants.landmarkType.routeStop,
-        name: "LMK_SEAL_HARBOR_STOP",
+        name: "Seal Harbor",
         stopId: 31
     },
     {
-        description: "LMK_SEAWALL_CAMPGROUND_STOP",
         geoPointUid: "LMK_SEAWALL_CAMPGROUND",
         landmarkType: constants.landmarkType.campground,
-        name: "LMK_SEAWALL_CAMPGROUND_STOP",
+        name: "Seawall Campground",
         stopId: 46
     },
     {
         description: "LMK_SIEUR_DE_MONTS_DESC",
         geoPointUid: "LMK_SIEUR_DE_MONTS",
         landmarkType: constants.landmarkType.visitorCenter,
-        name: "LMK_SIEUR_DE_MONTS_STOP",
+        name: "Sieur De Monts",
         stopId: 21
     },
     {
-        description: "LMK_SMUGGLERS_DEN_CAMPGROUND_STOP",
         geoPointUid: "LMK_SMUGGLERS_DEN_CAMPGROUND",
         landmarkType: constants.landmarkType.campground,
-        name: "LMK_SMUGGLERS_DEN_CAMPGROUND_STOP",
+        name: "Smugglers' Den Campground",
         stopId: 41
     },
     {
         description: "LMK_SOMESVILLE_DESC",
         geoPointUid: "LMK_SOMESVILLE",
         landmarkType: constants.landmarkType.routeStop,
-        name: "LMK_SOMESVILLE_STOP",
+        name: "Somesville",
         stopId: 39
     },
     {
-        description: "LMK_SOUTHWEST_HARBOR_STOP",
         geoPointUid: "LMK_SOUTHWEST_HARBOR",
         landmarkType: constants.landmarkType.routeStop,
-        name: "LMK_SOUTHWEST_HARBOR_STOP",
+        name: "Southwest Harbor",
         stopId: 44
     },
     {
-        description: "LMK_THUNDER_HOLE_STOP",
         geoPointUid: "LMK_THUNDER_HOLE",
         landmarkType: constants.landmarkType.pointOfInterest,
-        name: "LMK_THUNDER_HOLE_STOP",
+        name: "Thunder Hole",
         stopId: 23
     },
     {
-        description: "LMK_TREMONT_SCHOOL_STOP",
         geoPointUid: "LMK_TREMONT_SCHOOL",
         landmarkType: constants.landmarkType.routeStop,
-        name: "LMK_TREMONT_SCHOOL_STOP",
+        name: "Tremont School",
         stopId: 48
     },
     {
-        description: "LMK_TOWN_HILL_STOP",
         geoPointUid: "LMK_TOWN_HILL",
         landmarkType: constants.landmarkType.routeStop,
-        name: "LMK_TOWN_HILL_STOP",
+        name: "Town Hill",
         stopId: 69
     },
     {
         description: "LMK_VILLAGE_GREEN_DESC",
         geoPointUid: "LMK_VILLAGE_GREEN",
         landmarkType: constants.landmarkType.pointOfInterest,
-        name: "LMK_VILLAGE_GREEN_STOP",
+        name: "Village Green",
         stopId: 1
     },
     {
-        description: "LMK_WILDWOOD_STABLES_STOP",
         geoPointUid: "LMK_WILDWOOD_STABLES",
         landmarkType: constants.landmarkType.routeStop,
-        name: "LMK_WILDWOOD_STABLES_STOP",
+        name: "Wildwood Stables",
         stopId: 30
     },
     {
-        description: "LMK_WINTER_HARBOR_STOP",
         geoPointUid: "LMK_WINTER_HARBOR",
         landmarkType: constants.landmarkType.routeStop,
-        name: "LMK_WINTER_HARBOR_STOP",
+        name: "Winter Harbor",
         stopId: 57
     },
     {
-        description: "LMK_WONDER_VIEW_INN_STOP",
         geoPointUid: "LMK_WONDER_VIEW_INN",
         landmarkType: constants.landmarkType.lodging,
-        name: "LMK_WONDER_VIEW_INN_STOP",
+        name: "Wonder View Inn",
         stopId: 19
     },
     {
-        description: "LMK_WOODLANDS_KOA_CAMPGROUND_STOP",
         geoPointUid: "LMK_WOODLANDS_KOA_CAMPGROUND",
         landmarkType: constants.landmarkType.campground,
-        name: "LMK_WOODLANDS_KOA_CAMPGROUND_STOP",
+        name: "Woodlands KOA Campground",
         stopId: 8
     },
     {
-        description: "The roadside trailhead for Champlain Mountain's north trail.",
+        description: "N.R.T. description.",
+        descriptionShort: "N.R.T. short desc.",
         geoPointUid: "LMK_CHAMPLAIN_NORTH_RIDGE",
         landmarkType: constants.landmarkType.trailhead,
         name: "Champlain North Ridge Trailhead",
         routeIds: [3,4]
     },
     {
-        description: "This is the desc.",
         geoPointUid: "LMK_SAND_BEACH",
         landmarkType: constants.landmarkType.pointOfInterest,
         name: "Sand Beach",
         stopId: 22
     },
     {
-        description: "This is the desc. for thunder hole",
         geoPointUid: "LMK_THUNDER_HOLE",
         landmarkType: constants.landmarkType.pointOfInterest,
         name: "Thunder Hole",

@@ -22,6 +22,15 @@
  */
 
 
+/**
+ * @typedef PageElement
+ * @property {string} [h1] A header.
+ * @property {PageElement[]} [ul] A list of elements.
+ * @property {string} [p] A paragraph of text.
+ * @property {string} [li] A list item.
+ */
+
+
 /** @type {constants} */
 module.exports = Object.freeze({
     /**

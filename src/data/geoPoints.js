@@ -85,7 +85,7 @@ module.exports = [
     {
         latitutde: 44.35030746,
         longitude: -68.24166107,
-        uid: "LMK_BUBBLE_POND_STOP"
+        uid: "LMK_BUBBLE_POND"
     },
     {
         latitutde: 44.3786,
@@ -221,11 +221,6 @@ module.exports = [
         latitutde: 44.30040359,
         longitude: -68.33153534,
         uid: "LMK_SMUGGLERS_DEN_CAMPGROUND"
-    },
-    {
-        latitutde: 44.30040359,
-        longitude: -68.33153534,
-        uid: "LMK_SMUGGLERS_DEN_CAMPGROUND_STOP"
     },
     {
         latitutde: 44.3613205,

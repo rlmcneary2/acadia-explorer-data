@@ -2,11 +2,17 @@
 
 
 /**
+ * @typedef {import("./constants").PageElement} PageElement
+ */
+
+
+/**
  * @typedef Route
  * @property {string} description
  * @property {number} id
  * @property {string} name
  * @property {string} [notice]
+ * @property {PageElement[]} [page] An array with information that can be displayed as HTML.
  * @property {ScheduledStops[]} scheduledStops
  */
 
@@ -20,6 +26,7 @@
  * @property {string} hours.last
  * @property {number[]} ids
  */
+
 
 /** @type {Route[]} */
 module.exports = [
@@ -84,9 +91,12 @@ module.exports = [
     },
 
     {
-        description: "Serves Ocean Drive to Otter Cliffs.",
+        description: "RTE_SAND_BEACH_DESC",
         id: 3,
         name: "Sand Beach",
+        page: [
+            { p: "RTE_SAND_BEACH_DESC" }
+        ],
         scheduledStops:[
             {
                 dates: {

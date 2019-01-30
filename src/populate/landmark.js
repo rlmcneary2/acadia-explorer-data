@@ -93,7 +93,10 @@ module.exports = async (output, isDebug) => {
         routes.push(nextRoute);
     }
 
-    await writeFile(path.join(output, "data.json"), { landmarks, routes }, isDebug);
+    const fileName = path.join(output, "app.json");
+    console.log(`Writing to '${fileName}'`);
+
+    await writeFile(fileName, { landmarks, routes }, isDebug);
 
     console.log(`${path.parse(__filename).name} end`);
 };
