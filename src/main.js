@@ -8,7 +8,9 @@ const path = require("path");
 async function start(isDebug) {
     console.log("Start");
 
-    const outputPath = path.join(path.dirname(__dirname), "dist");
+    const projectPath = path.dirname(__dirname);
+    const githubPath = path.dirname(projectPath);
+    const outputPath = path.join(githubPath, "acadia-explorer", "data", "acadia");
     const populatePath = path.join(__dirname, "populate");
     let files = await readdir(populatePath);
     await process(outputPath, files.map(x => path.join(populatePath, x)), 0, isDebug);
