@@ -11,13 +11,16 @@ const routesData = require("../data/routes");
 /** 
  * @typedef {import("../data/geoPoints").GeoPoint} GeoPoint
  * @typedef {import("../data/landmarks").Landmark} Landmark
+ * @typedef {import("../data/constants").LandmarkFeature} LandmarkFeature
  */
 
 
 /** 
  * @typedef DataLandmark
  * @property {string} description
+ * @property {LandmarkFeature[]} [features]
  * @property {string} geoPointUid
+ * @property {number} [id]
  * @property {LandmarkType} landmarkType
  * @property {string} name
  * @property {object} location
@@ -108,6 +111,9 @@ module.exports = async (output, isDebug) => {
 function createOutputLandmark(landmark) {
     /** @type {DataLandmark} */
     const { geoPointUid, routeIds, stopId, ...nextLandmark } = landmark; // eslint-disable-line no-unused-vars
+    if (typeof stopId === "number") {
+        nextLandmark.id = stopId;
+    }
 
     // Add the geo location information to the landmark.
     const gp = geoPointsData.find(y => y.uid === landmark.geoPointUid);

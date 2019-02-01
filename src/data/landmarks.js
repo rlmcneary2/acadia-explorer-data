@@ -2,9 +2,11 @@
 
 
 const constants = require("./constants");
+const { landmarkFeature } = constants;
 
 
 /**
+ * @typedef {import("./constants").LandmarkFeature} LandmarkFeature
  * @typedef {import("./constants").LandmarkType} LandmarkType
  * @typedef {import("./constants").PageElement} PageElement
  */
@@ -12,6 +14,7 @@ const constants = require("./constants");
 
 /**
  * @typedef Landmark
+ * @property {LandmarkFeature[]} [features] Things accessible from this landmark.
  * @property {string} [description] A long potentially multi-sentence description.
  * @property {string} geoPointUid
  * @property {LandmarkType} landmarkType
@@ -290,6 +293,7 @@ module.exports = [
     },
     {
         description: "LMK_SIEUR_DE_MONTS_DESC",
+        features: [landmarkFeature.restroom, landmarkFeature.hike, landmarkFeature.climb],
         geoPointUid: "LMK_SIEUR_DE_MONTS",
         landmarkType: constants.landmarkType.visitorCenter,
         name: "Sieur De Monts",
@@ -334,6 +338,7 @@ module.exports = [
     },
     {
         description: "LMK_VILLAGE_GREEN_DESC",
+        features: [landmarkFeature.park],
         geoPointUid: "LMK_VILLAGE_GREEN",
         landmarkType: constants.landmarkType.pointOfInterest,
         name: "Village Green",

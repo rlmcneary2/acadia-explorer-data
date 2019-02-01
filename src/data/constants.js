@@ -2,6 +2,16 @@
 
 
 /**
+ * @typedef LandmarkFeature
+ * @property {"climb"} climb
+ * @property {"hike"} hike
+ * @property {"park"} park
+ * @property {"restroom"} restroom
+ * @property {"walk"} walk
+ */
+
+
+/**
  * @typedef LandmarkType
  * @property {"airport"} airport
  * @property {"attraction"} attraction
@@ -18,6 +28,7 @@
 
 /**
  * @typedef constants
+ * @property {LandmarkFeature} landmarkFeature
  * @property {LandmarkType} landmarkType
  */
 
@@ -27,6 +38,7 @@
  * @property {string} [h1] A header.
  * @property {PageElement[]} [ul] A list of elements.
  * @property {string} [p] A paragraph of text.
+ * @property {string} [tip] A paragraph of text to be displayed as a helpful tip.
  * @property {string} [li] A list item.
  */
 
@@ -34,8 +46,20 @@
 /** @type {constants} */
 module.exports = Object.freeze({
     /**
-     * Allowed landmark types.
      * @readonly
+     * @type {LandmarkFeature}
+     */
+    landmarkFeature: {
+        climb: "climb",
+        hike: "hike",
+        park: "park",
+        restroom: "restroom",
+        walk: "walk"
+    },
+
+    /**
+     * @readonly
+     * @type {LandmarkType}
      */
     landmarkType: {
         airport: "airport",

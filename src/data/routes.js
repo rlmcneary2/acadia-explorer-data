@@ -96,7 +96,7 @@ module.exports = [
         name: "Sand Beach",
         page: [
             { p: "RTE_SAND_BEACH_DESC" },
-            { p: "RTE_SAND_BEACH_DESC_2" }
+            { tip: "RTE_SAND_BEACH_TIP" }
         ],
         scheduledStops:[
             {
